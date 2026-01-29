@@ -5,3 +5,18 @@
 body {
   background-color: #fce4ec; /* A lovely light pink */
 }
+
+@keyframes float {
+  from {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0.8;
+  }
+  to {
+    transform: translateY(var(--final-y, 5vh)) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.animate-float {
+  animation: float linear forwards;
+}
